@@ -1,0 +1,23 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'go.snuxoll.com'
+theme = 'PaperMod'
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Packages"
+url = "/pkg"
+weight = 2
+
+[permalinks.page]
+package = '/:slug'
+
+[permalinks.section]
+package = '/pkg'
+
+[params]
+ShowBreadCrumbs = true
