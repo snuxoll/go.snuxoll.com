@@ -5,7 +5,7 @@ author = 'Stefan Nuxoll'
 slug = 'functional'
 [params]
 mod = 'go.snuxoll.com/functional'
-repo = 'github.com/snuxoll/go-functional'
+repo = 'https://github.com/snuxoll/go-functional'
 +++
 {{< package-widgets >}}
 ## Overview
