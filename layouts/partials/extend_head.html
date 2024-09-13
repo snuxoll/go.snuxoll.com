@@ -1,3 +1,4 @@
 {{- if and (eq page.Type "package") (isset .Page.Params "mod") (isset .Page.Params "repo") -}}
-<meta name="go-import" content="{{ .Page.Params.mod }} git {{ .Page.Params.repo }}">
+<meta name="go-import" content="{{ .Page.Params.mod }} git {{ .Page.Params.repo }}"/>
+<meta/>
 {{- end -}}
