@@ -2,3 +2,9 @@
 <meta name="go-import" content="{{ .Page.Params.mod }} git {{ .Page.Params.repo }}"/>
 <meta/>
 {{- end -}}
+{{- $styles := slice -}}
+{{- $styles = $styles | append (resources.Get "css/badge.css") -}}
+{{- $core := resources.Get "css/core.css" -}}
+{{- $css := resources.Concat $core $styles -}}
+{{- $css := $css | resources.Minify -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
