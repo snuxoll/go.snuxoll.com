@@ -21,3 +21,6 @@ package = '/pkg'
 
 [params]
 ShowBreadCrumbs = true
+
+[minify]
+disableHTML = true
